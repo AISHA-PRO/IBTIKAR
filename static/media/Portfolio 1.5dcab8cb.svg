@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.8 174.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e0edf6;
+      }
+
+      .cls-2 {
+        fill: #80cf9c;
+        opacity: 0.49;
+      }
+      circle{
+        animation: circle 4s infinite linear alternate-reverse;
+        transform-origin: 94.2px 98.3px;
+      }
+      rect {
+        animation: rect 4s infinite linear alternate-reverse;
+        transform-origin: 94.2px 98.3px;
+      }
+      @keyframes circle {
+       0%{
+         transform: scale(0.5);
+       }
+       100%{
+         transform:scale(1)
+       }
+      }
+      @keyframes rect{
+        0%{
+          transform:rotate(0deg) scale(1);
+        }
+        100%{
+          transform:rotate(45deg) scale(0.4)
+        }
+      }
+    </style>
+  </defs>
+  <title>Portfolio 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Portofolio">
+      <circle class="cls-1" cx="94.2" cy="98.3" r="76.6"/>
+      <rect class="cls-2" x="13.6" y="13.6" width="89" height="88.96" transform="translate(-17.8 89.6) rotate(-67.5)"/>
+    </g>
+  </g>
+</svg>

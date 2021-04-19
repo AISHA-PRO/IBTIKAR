@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.5 399.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8b9d6;
+      }
+      .cls-2 {
+        fill: #fee4c3;
+      }
+      .cls-2 {
+        animation: circle 4s infinite linear alternate-reverse;
+        transform-origin: 120.9px 247.5px;
+      }
+      .cls-1 {
+        animation: circle2 4s infinite linear alternate-reverse;
+        transform-origin: 120.9px 247.5px;
+      }
+      #first {
+        animation: circle3 4s infinite linear alternate-reverse;
+        transform-origin: 120.9px 247.5px;
+      }
+      @keyframes circle {
+       0%{
+         transform: scale(0.5);
+       }
+       100%{
+         transform:scale(1)
+       }
+      }
+      @keyframes circle2 {
+       0%{
+         transform: scale(0.5) rotate(20deg);
+       }
+       100%{
+         transform:scale(1) rotate(0deg)
+       }
+      }
+      @keyframes circle3 {
+       0%{
+         transform: scale(0.5) rotate(-20deg);
+       }
+       100%{
+         transform:scale(1) rotate(0deg)
+       }
+      }
+    </style>
+  </defs>
+  <title>Investment-1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Investment">
+      <circle   class="cls-1" cx="31.1" cy="368" r="31.1"/>
+      <circle class="cls-2" cx="120.9" cy="247.5" r="87.5"/>
+      <circle id="first" class="cls-1" cx="106.2" cy="18.5" r="18.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 464.1 476.1">
+<defs>
+<style>
+.cls-1 {
+  fill: #fefefe;
+  opacity:0;
+}
+
+.cls-2 {
+  fill: #fde3c2;
+}
+
+.cls-3 {
+  fill: #707fff;
+  opacity: 0.41;
+}
+
+.cls-4 {
+  fill: #f6b9d5;
+}
+#circle{
+  animation: circle 10s linear infinite alternate-reverse;
+  transform-origin: left center;
+  opacity: 0.6;
+}
+@keyframes circle{
+  0%{
+    transform:translateX(0%) scale(1);
+  }
+  50%{
+    transform:  scale(0.5);
+  }
+  100%{
+    transform:translateX(-80%) scale(1);
+  }
+}
+#circle1 {
+  animation: circle1 10s linear infinite alternate-reverse;
+  transform-origin: center center;
+  opacity: 0.6;
+}
+@keyframes circle1{
+  0%{
+    transform: translateX(0%) scale(1);
+  }
+  50%{
+    transform: translateX(-5%) scale(1.4);
+  }
+  100%{
+    transform: translateX(-10%) scale(1);
+  }
+}
+#polygon{
+  animation: polygon 10s linear infinite alternate-reverse;
+  transform-origin: 260.828px 107.768px;
+  opacity: 0.6;
+}
+@keyframes polygon{
+  0%{
+    transform:rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(45deg) scale(1.5);
+  }
+  100%{
+    transform: rotate(90deg) scale(1);
+  }
+}
+</style>
+</defs>
+<title>Asset 15</title>
+<g id="Layer_2" data-name="Layer 2">
+<g id="Layer_4" data-name="Layer 4">
+<g>
+<rect id="rect" class="cls-1" width="416.2" height="476.1"/>
+<circle id="circle1" class="cls-2" cx="281" cy="235.2" r="133.2"/>
+<polygon id="polygon" class="cls-3" points="287.5 94.2 259.2 122.6 230.9 94.2 259.2 65.7 287.5 94.2"/>
+<circle id="circle" class="cls-4" cx="418.1" cy="414.1" r="46"/>
+</g>
+</g>
+</g>
+</svg>
