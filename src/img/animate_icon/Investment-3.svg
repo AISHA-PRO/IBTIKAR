@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.5 126.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d4a4cc;
+      }
+
+      .cls-2 {
+        fill: #f8c3dd;
+        opacity:0.8;
+      }
+
+      .cls-3 {
+        fill: #5966d4;
+        opacity: 0.47;
+      }
+        circle{
+        animation: circle 5s infinite linear alternate-reverse;
+        transform-origin: 94.2px 98.3px;
+      }
+      #cir{
+  animation: rect 5s infinite linear alternate-reverse;
+        transform-origin: 94.2px 98.3px;
+      }
+      rect {
+        animation: rect 5s infinite linear alternate-reverse;
+        transform-origin: 94.2px 98.3px;
+      }
+      @keyframes circle {
+       0%{
+         transform: scale(0.5);
+       }
+       100%{
+         transform:scale(1)
+       }
+      }
+      @keyframes rect{
+        0%{
+          transform:rotate(0deg) scale(1);
+        }
+        100%{
+          transform:rotate(45deg) scale(0.4)
+        }
+      }
+    </style>
+  </defs>
+  <title>Investment-3</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Investment">
+      <g id="Layer_9" data-name="Layer 9">
+        <circle id="cir" class="cls-1" cx="18.4" cy="18.4" r="18.4"/>
+        <circle class="cls-2" cx="89.9" cy="73.3" r="53.1"/>
+        <rect class="cls-3" x="130.5" y="83.6" width="25" height="24.97" transform="translate(-29 105.8) rotate(-37.1)"/>
+      </g>
+    </g>
+  </g>
+</svg>

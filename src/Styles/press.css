@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    width:100%;
+    height: auto;
+    /* vertical-align: top !important; */
+}
+/*****************************************************************/
+.pressMainWrapper{
+    box-sizing: border-box;
+    width:50%;
+    margin: auto;
+    font-size: 40px !important;
+    z-index: 2;
+    margin-top: 10%;
+}
+.pressMainWrapper h1{
+    font-weight: 400;
+    font-size:1.4em;
+    text-align: left;
+    margin: 0;
+}
+.pressMainWrapper h3{
+    font-weight: 400;
+    text-align: left;
+    font-size: 0.7em;
+    margin: 0;
+    margin-top: 20px;
+}
+.pressMainWrapper article {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin:30px 0px;
+    border:1px solid #bbb;
+    border-radius: 10px;
+    z-index: 4;
+}
+.pressMainWrapper article .pic{
+    padding:15px 15px 15px 15px;
+    width:100%;
+    height: 100%;
+}
+.pressMainWrapper article .pic img{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%)
+}
+.pressMainWrapper article .cont{
+    padding:0px 15px 0px 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pressMainWrapper article:first-of-type .cont{
+    padding:15px 15px 15px 0px;
+    height: 100%;
+    display: block;
+}
+.pressMainWrapper article .cont h3{
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 0.5em;
+    text-align: left !important;
+}
+.pressMainWrapper article .cont p{
+    display:none;
+    margin: 0 0 0 0;
+}
+.pressMainWrapper article:first-of-type .cont h3{
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 0.6em;
+    position: relative;
+    top:0%;
+    left:0%;
+    transform: translateX(0%) translateY(0%);
+}
+.pressMainWrapper article:first-of-type .cont p{
+    font-size:0.5em;
+    font-weight: 400;
+    margin: 0 0 0 0;
+    display:block;
+}
+
+/*Positioning the background images*/
+/***************************************************************/
+.pressContainer {
+  position: relative;
+  z-index: 0;
+  overflow: hidden !important;
+}
+.pressContainer > img:nth-of-type(1) {
+  position: absolute;
+  top: 12%;
+  right: -25px;
+  z-index: 0;
+  width: 250px;
+}
+.pressContainer > img:nth-of-type(2) {
+  position: absolute;
+  top: 70%;
+  left: -35px;
+  z-index: 0;
+  width: 250px;
+}
+/*Media Query*/
+/*******************************************************/
+@media screen and (max-width:1100px){
+    .pressMainWrapper{
+        font-size: 37px;
+    }
+}
+@media screen and (max-width:1000px){
+    .pressMainWrapper{
+        font-size: 35px;
+        width: 60%;
+    }
+    .pressContainer > img:nth-of-type(1){
+        width:200px;
+    }
+    .pressContainer > img:nth-of-type(2){
+        width:200px;
+    }
+}
+@media screen and (max-width:890px){
+    .pressMainWrapper{
+        font-size: 30px;
+        width: 65%;
+    }
+    .pressContainer > img:nth-of-type(1){
+        width:150px;
+    }
+    .pressContainer > img:nth-of-type(2){
+        width:150px;
+    }
+}
+@media screen and (max-width:700px){
+    .pressMainWrapper{
+        font-size: 25px;
+        width: 70%;
+    }
+}
+@media screen and (max-width:690px){
+    .pressContainer > img:nth-of-type(1){
+        display: none;
+    }
+    .pressContainer > img:nth-of-type(2){
+        display:none;
+    }
+}
+@media screen and (max-width:450px){
+    .pressMainWrapper article{
+        display: block;
+    }
+    
+    .pressMainWrapper article .cont{
+        padding:0px 15px 0px 15px;
+        
+    }
+    .pressMainWrapper article:first-of-type .cont{
+        padding:0px 15px 15px 15px;
+        
+    }
+    .pressMainWrapper article .pic img{
+        position: relative;
+        top:0%;
+        left:0%;
+        transform: translateX(0%) translateY(0%);
+    }
+    .pressMainWrapper article .cont h3{
+        margin: 0;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:390px){
+    .pressMainWrapper article:first-of-type{
+        display: block;
+    }
+}
+
+/* Pagination */
+.pressMainWrapper .pagination{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.pressMainWrapper .pagination .paginationElements{
+    font-family: "Montserrat" !important;
+    font-size:0.625em !important ;
+    font-weight: 600 !important;
+}
+
+.page-item, .page-link{
+    background-color: none;
+    border:none;
+    color:#2b292d;
+}
